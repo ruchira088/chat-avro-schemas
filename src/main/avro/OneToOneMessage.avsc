@@ -1,0 +1,30 @@
+{
+  "namespace": "com.ruchij.avro.chat",
+  "type": "record",
+  "name": "OneToOneMessage",
+  "fields": [
+    {
+      "name": "message_id",
+      "type": "string"
+    },
+    {
+      "name": "sender_id",
+      "type": "string"
+    },
+    {
+      "name": "receiver_id",
+      "type": "string"
+    },
+    {
+      "name": "sent_at",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ]
+}
